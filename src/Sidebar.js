@@ -15,7 +15,7 @@ function Sidebar() {
         src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
         alt=""
       />
-
+       {/* home , search and Library icons */}
       <SidebarOption Icon={AddHomeIcon} title="Home" />
       <SidebarOption Icon={SearchIcon} title="Search" />
       <SidebarOption Icon={LibraryMusicIcon} title="Your Library" />
@@ -25,7 +25,7 @@ function Sidebar() {
 
 
 
-
+      {/* fetching all playlist from the our app using the   */}
       {playlists?.items?.map(playlist => (
         <SidebarOption title={playlist.name} />
       ))}

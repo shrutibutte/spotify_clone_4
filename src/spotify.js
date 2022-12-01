@@ -4,17 +4,20 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 const redirectUri = "http://localhost:3000/";
 const clientId = "0d85f35d1d83424dab3561d8f9f2aa35";
-
+// const responseType = "token";
 // 1. click login button
 // 2. redirect to spotify login page
-// 3. redirect to home page onced logged in
+// 3. redirect to home page once logged in
 
+
+// scope of the appp which things we can explore
 const scopes = [ 
  "user-read-currently-playing", 
  "user-read-recently-played",
  "user-read-playback-state", 
  "user-top-read",
- "user-modify-playback-state", 
+ "user-modify-playback-state",
+  
 ];
 
 export const getTokenFromUrl = () => {
@@ -30,6 +33,7 @@ export const getTokenFromUrl = () => {
     },{});
 }
 
+//  this is main login export function first test the client_id match then authenticte the redirect the localhost
 export const loginUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
     "%20"
     )}&response_type=token&show_dialog=true`;

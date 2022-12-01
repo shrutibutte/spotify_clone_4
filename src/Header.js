@@ -10,15 +10,15 @@ function Header() {
   return (
     <div className='header'>
       <div className="header__left">
-        <SearchIcon />
-        <input placeholder='Search for Artists, Songs, or Podcasts' type="text" />
+        <SearchIcon />       {/* this is icon image using from mui material  */}
+        <input placeholder='Search for Artists, Songs, or Podcasts' type="text" />   {/* search icon fro search a song  */}
 
         {/* <Header spotify={spotify}/> */}
 
       </div>
       <div className="header__right">
-        <Avatar src={user?.images[0]?.url} alt={user?.display_name} />
-        <h4>{user?.display_name}</h4>
+        <Avatar src={user?.images[0]?.url} alt={user?.display_name} />    {/* i got profile image from my account  */}
+        <h4>{user?.display_name}</h4>                                    {/* shruti i got user name from my account  */}
 
       </div>
     </div>

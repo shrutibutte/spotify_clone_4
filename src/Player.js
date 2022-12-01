@@ -10,11 +10,11 @@ function Player({ spotify }) {
          
             <div className="player">
                 <div className="player__body">
-                    <Sidebar />
-                    <Body spotify={spotify}/>
+                    <Sidebar />      {/* Sidebar of the app   */}
+                    <Body spotify={spotify}/>    {/* body of the app  */}
                 </div>
                  
-                 <Footer/> 
+                 <Footer/>   {/* song play section  */}
                  
             </div>
         </div>

@@ -16,9 +16,9 @@ function Footer() {
   return (
     <div className='footer'>
       <div className="footer__left">
-      <img className="footer__albumLogo" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.scdn.co%2Fimage%2Fab67616d0000b273365b3fb800c19f7ff72602da&imgrefurl=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F5rb9QrpfcKFHM1EUbSIurX&tbnid=lRWOXxPXqxGijM&vet=12ahUKEwiXzM7Ri8v7AhVb5HMBHYG9BF8QMyhTegUIARC6AQ..i&docid=MYILds7sSna_bM&w=639&h=640&q=yeah&ved=2ahUKEwiXzM7Ri8v7AhVb5HMBHYG9BF8QMyhTegUIARC6AQ" alt="" />
+      <img className="footer__albumLogo" src="https://www.tunelf.com/wp-content/uploads/2022/02/discover-weekly.jpg" alt="" />
         <div className="footer__songInfo">
-          <h4>Yeah!</h4>
+          <h4>Discover!</h4>
           <p>Usher</p>
         </div>
 
